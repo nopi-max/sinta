@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Resep Imut Pink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="maskot">🐰</div>
+
+<div class="container">
+    <h1 class="judul">🍓 Resep Sederhana Imut 🍓</h1>
+    <p class="sub">Masak mudah & menyenangkan 💕</p>
+
+    <select id="kategori" onchange="filterResep()">
+        <option value="all">🌈 Semua</option>
+        <option value="sarapan">🍳 Sarapan</option>
+        <option value="cemilan">🍟 Cemilan</option>
+        <option value="minuman">🥤 Minuman</option>
+    </select>
+
+    <div class="card">
+        <h2 id="judulResep">Klik tombol ya 💗</h2>
+        <ul id="bahan"></ul>
+        <p id="cara"></p>
+    </div>
+
+    <button onclick="tampilResep()">🍽️ Resep Acak</button>
+    <button onclick="simpanFavorit()">❤️ Favorit</button>
+
+    <p class="fav" id="favText"></p>
+</div>
+
+<div class="sparkle"></div>
+
+<audio id="klik" src="click.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
+
