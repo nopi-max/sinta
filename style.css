@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(135deg,#ffd6e8,#fff0f6);
+    font-family: 'Comic Sans MS', cursive;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    background: white;
+    width: 360px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px #ffb3d9;
+    animation: pop 1s ease;
+}
+
+@keyframes pop {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.judul {
+    color: #ff4d88;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {text-shadow:0 0 5px pink;}
+    to {text-shadow:0 0 15px hotpink;}
+}
+
+.sub { color:#ff80aa; }
+
+select {
+    border-radius: 15px;
+    padding: 8px;
+    border: none;
+    background: #ffe6f0;
+}
+
+.card {
+    background: #fff0f6;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 15px 0;
+    animation: float 3s infinite;
+}
+
+@keyframes float {
+    0%,100% {transform:translateY(0);}
+    50% {transform:translateY(-6px);}
+}
+
+button {
+    background: linear-gradient(45deg,#ff66a3,#ff99cc);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 5px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,100% {transform:translateY(0);}
+    50% {transform:translateY(-5px);}
+}
+
+.maskot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 40px;
+    animation: lompat 2s infinite;
+}
+
+@keyframes lompat {
+    0%,100% {transform:translateY(0);}
+    50% {transform:translateY(-10px);}
+}
+
+.sparkle span {
+    position: fixed;
+    top: -10px;
+    animation: turun linear infinite;
+}
+
+@keyframes turun {
+    to {transform:translateY(110vh); opacity:0;}
+}
+
+.fav { color:#ff4d88; }
